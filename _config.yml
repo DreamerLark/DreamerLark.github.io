@@ -1,8 +1,12 @@
+minimal_mistakes_skin: default
 theme: jekyll-theme-minimal
 title: 刘建的个人主页
 name: dreamerlark.github.io
 email: liujian750806@gmail.com
-description: 开始回忆。
+description: 开始回忆
+baseurl: ""
+url: "https://dreamerlark.github.io"
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 author:
   name: 刘建
