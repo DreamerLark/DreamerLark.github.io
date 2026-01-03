@@ -1,0 +1,33 @@
+name: Sync main to master
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  SOURCE_BRANCH: main
+  TARGET_BRANCH: master
+  PUSH_TOKEN: ${{ secrets.SYNC_PAT || secrets.GITHUB_TOKEN }}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.SOURCE_BRANCH }}
+
+      - name: Push main to master (force update)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git push origin HEAD:${TARGET_BRANCH} --force
+          echo "Synced ${SOURCE_BRANCH} -> ${TARGET_BRANCH}. Note: If SYNC_PAT is unset, pushes use GITHUB_TOKEN and will NOT trigger other workflows (e.g., Pages)."
