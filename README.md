@@ -8,7 +8,7 @@
 - GitHub 主页：https://github.com/DreamerLark
 
 ## 在 GitHub Pages 上查看
-1. 仓库 Settings → Pages，选择 Source 为 **GitHub Actions**（推荐）。如果使用分支方式，请确保选择 `main` 分支和 `/` 目录。
+1. 仓库 Settings → Pages，选择 Source 为 **GitHub Actions**（推荐）。如果使用分支方式，请确保选择 `master`（当前 Pages 允许部署的分支）和 `/` 目录。
 2. 保存后等待几分钟，页面会发布到 `https://<用户名>.github.io/<仓库名>/`（若为用户主页仓库，则为 `https://<用户名>.github.io/`）。
 3. 本仓库已放置 `.nojekyll`，确保静态 Markdown 原样渲染。
 
