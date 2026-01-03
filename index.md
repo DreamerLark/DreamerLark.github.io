@@ -10,7 +10,7 @@ permalink: /
 
 ## 快速入口
 
-- [Codex 学习记录](https://dreamerlark.github.io/codex/) —— 跟踪我在大模型与代码生成领域的练习进度。
+- [Codex 学习记录](/codex/) —— 跟踪我在大模型与代码生成领域的练习进度。
 - [GitHub 主页](https://github.com/DreamerLark) —— 更多项目与实验。
 - [联系我](mailto:liujian750806@gmail.com)
 
