@@ -6,6 +6,7 @@
 - 主页导航：[`index.md`](./index.md)
 - Codex 学习记录：[`codex.md`](./codex.md)
 - GitHub 主页：https://github.com/DreamerLark
+> GitHub Pages 需要静态主页文件，已新增 `index.html` 和 `codex.html`，可直接在浏览器访问 `https://dreamerlark.github.io/`。
 
 ## 在 GitHub Pages 上查看
 1. 仓库 Settings → Pages，选择 Source 为 **GitHub Actions**（推荐）。如果使用分支方式，请确保选择 `master`（当前 Pages 允许部署的分支）和 `/` 目录。
